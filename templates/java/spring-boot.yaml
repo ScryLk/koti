@@ -1,0 +1,7 @@
+id: spring-boot-preset
+language: java
+type: code-style
+scope: file
+rule: "Preset de organização de projeto Spring Boot"
+pattern: ".*" # placeholder
+severity: info

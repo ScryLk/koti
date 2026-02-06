@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 245 242 232; /* Cream / Off-white #F5F2E8 */
+  /* Brand palette (logo colors) */
+  --brand-primary: 42 143 157; /* Teal Blue #2A8F9D */
+  --brand-secondary: 42 143 157; /* Teal Blue #2A8F9D */
+  --brand-contrast: 255 255 255;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(var(--bg));
+}
+
+.brand-gradient {
+  background: linear-gradient(90deg, rgb(var(--brand-primary)) 0%, rgb(var(--brand-secondary)) 100%);
+}
+
+.brand-text {
+  color: rgb(var(--brand-primary));
+}
+
+.brand-border {
+  border-color: rgb(var(--brand-primary));
+}

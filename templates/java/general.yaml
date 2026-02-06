@@ -1,0 +1,7 @@
+id: java-general-naming
+language: java
+type: naming-convention
+scope: class
+rule: "Classes devem ser PascalCase"
+pattern: "^[A-Z][a-zA-Z0-9]*$"
+severity: warning

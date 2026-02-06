@@ -1,0 +1,20 @@
+{
+  "name": "kodi-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run -w @kodi/shared build && npm run -w @kodi/core build && npm run -w @kodi/cli build",
+    "clean": "rm -rf packages/*/dist",
+    "dev:cli": "npm run -w @kodi/cli build && node packages/cli/dist/index.js",
+    "dev:web": "npm run -w @kodi/web dev"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@heroui/react": "^2.8.8",
+    "@heroui/theme": "^2.4.26"
+  }
+}
